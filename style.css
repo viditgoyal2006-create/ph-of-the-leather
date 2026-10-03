@@ -1,0 +1,134 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #eef4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-card {
+  width: 90%;
+  max-width: 1400px;
+  height: 90%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #1a73e8;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.card-subheader {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f3f4;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #5f6368;
+  font-size: 15px;
+}
+
+.badge {
+  border: 1px solid #1a73e8;
+  color: #1a73e8;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-body {
+  flex: 1;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  overflow: hidden;
+}
+
+#slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  background: white;
+  transition: opacity 0.3s ease;
+}
+
+.card-footer {
+  background-color: #eef1f6;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  background: white;
+  color: #1a73e8;
+  border: 1px solid #1a73e8;
+}
+
+.btn-outline:hover:not(:disabled) {
+  background: #f4f8fe;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #6296ee;
+}
+
+.progress-container {
+  flex: 1;
+  margin: 0 40px;
+  height: 6px;
+  background-color: #c2daf8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #1a73e8;
+  width: 0%;
+  transition: width 0.3s ease;
+}
